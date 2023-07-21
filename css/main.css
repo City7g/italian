@@ -103,6 +103,54 @@ h6 {
   font-weight: 400;
   font-style: normal;
 }
+.btn-main {
+  border-radius: 2px;
+  background: #ef4036;
+  padding: 14px 56px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 132.9%;
+  transition: 0.3s background-color ease;
+}
+.btn-main:hover {
+  background-color: #D62A20;
+}
+
+.btn-transparent {
+  border-radius: 2px;
+  border: 1px solid #251c1c;
+  background-color: transparent;
+  padding: 12px 30px;
+  color: #251c1c;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 132.9%;
+  transition: 0.3s ease;
+  transition-property: color, border-color;
+}
+.btn-transparent:hover {
+  color: #39B100;
+  border-color: #39B100;
+}
+
+.btn-secondary {
+  border-radius: 2px;
+  padding: 12px;
+  color: #fff;
+  background-color: #39B100;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 132.9%;
+  transition: 0.3s background-color ease;
+}
+.btn-secondary:hover {
+  background-color: #2E8E00;
+}
+
 body {
-  font-family: "Circle";
+  font-family: "Circe";
 }/*# sourceMappingURL=main.css.map */

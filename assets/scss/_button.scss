@@ -1,0 +1,50 @@
+.btn-main {
+  border-radius: 2px;
+  background: $red;
+  padding: 14px 56px;
+  color: $white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 132.9%;
+  transition: 0.3s background-color ease;
+
+  &:hover {
+    background-color: $red-hover;
+  }
+}
+
+.btn-transparent {
+  border-radius: 2px;
+  border: 1px solid $black;
+  background-color: transparent;
+  padding: 12px 30px;
+  color: $black;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 132.9%;
+  transition: 0.3s ease;
+  transition-property: color, border-color;
+
+  &:hover {
+    color: $green;
+    border-color: $green ;
+  }
+}
+
+.btn-secondary{
+  border-radius: 2px;
+  padding: 12px;
+  color: $white;
+  background-color: $green;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 132.9%;
+  transition: 0.3s background-color ease;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+}
