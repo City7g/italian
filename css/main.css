@@ -89,4 +89,20 @@ h6 {
 .container {
   max-width: 1160px;
   margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url("@/assets/fonts/Circe-Bold.woff2") format("woff2"), url("@/assets/fonts/Circe-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("@/assets/fonts/Circe-Regular.woff2") format("woff2"), url("@/assets/fonts/Circe-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Circle";
 }/*# sourceMappingURL=main.css.map */

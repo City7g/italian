@@ -29,5 +29,17 @@
 
 }
 
-.first__title {}
+.first__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 101.4%; 
+  letter-spacing: 1.2px;
+}
+
+.first__text{
+  color: $grey;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%; 
+}
 </style>
