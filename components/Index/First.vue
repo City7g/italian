@@ -3,8 +3,8 @@
     <div class="container">
       <div class="first__wrap">
         <div class="first__content">
-          <h1 class="first__title">Начни учить итальянский прямо сейчас!</h1>
-          <p class="first__text">Studia.it предлагает новый подход к изучению итальянского языка!Мы раскладываем язык по
+          <h1 class="title-h1 first__title">Начни учить итальянский прямо сейчас!</h1>
+          <p class="text-p1 first__text">Studia.it предлагает новый подход к изучению итальянского языка!Мы раскладываем язык по
             полочкам, проникаем в самую его суть и вытаскиваем из недр самое нужное.</p>
           <button class="btn-main first__button">Начать обучение</button>
         </div>
@@ -30,18 +30,10 @@
 }
 
 .first__title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 101.4%;
-  letter-spacing: 1.2px;
   margin-bottom: 20px;
 }
 
 .first__text {
-  color: $grey;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 170%;
   margin-bottom: 60px;
 }
 </style>

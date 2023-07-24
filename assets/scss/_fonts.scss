@@ -1,2 +1,22 @@
 @include font-face("Circe", "Circe-Bold", 700);
 @include font-face("Circe", "Circe-Regular", 400);
+
+.title-h1 {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.title-h2 {
+  font-family: Circe;
+  font-size: 30px;
+  line-height: 1.1; 
+  letter-spacing: 0.9px;
+}
+
+.text-p1 {
+  color: $grey;
+  font-size: 16px;
+  line-height: 1.7;
+}
