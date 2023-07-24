@@ -8,3 +8,8 @@
 body {
   font-family: "Circe";
 }
+
+::selection {
+  background-color: $black;
+  color: $white;
+}
