@@ -80,6 +80,7 @@
   </div>
 </template>
 
+
 <style lang="scss">
 .grammar{
   margin-top: 150px;
