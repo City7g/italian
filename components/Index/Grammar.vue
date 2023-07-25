@@ -124,7 +124,6 @@
   align-items: center;
   gap: 80px;
   padding: 55px 60px;
-  // transition: all 0.5s ease-out; &
 
   &:hover {
     .grammar__text {
@@ -148,6 +147,7 @@
 }
 
 .grammar__text-hover {
+  transition: opacity 0.4s ease;
   opacity: 0;
   color: $red;
 }
@@ -160,6 +160,7 @@
 }
 
 .block__next {
+  transition: opacity 0.4s ease;
   position: absolute;
   top: 0;
   right: 0;

@@ -12,6 +12,7 @@
         <div class="what-next__image">
           <img class="what-next__img" src="/img/what-next.svg" alt="">
         </div>
+          <img class="what-next__cat-foot" src="/img/WhatNext__cat foot.svg" alt="">
       </div>
     </div>
   </section>
@@ -19,8 +20,9 @@
 
 <style lang="scss">
 .what-next {
+  position: relative;
   background-color: $bc-grey;
-  padding: 82px 0px;
+  padding: 140px 0px;
 }
 
 .what-next__wrap {
@@ -45,5 +47,11 @@
   position: absolute;
   right: -30px;
   bottom: -115px;
+}
+
+.what-next__cat-foot {
+  position: absolute;
+  top: 38%;
+  left: 25%;
 }
 </style>
