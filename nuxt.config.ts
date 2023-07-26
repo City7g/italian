@@ -1,8 +1,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
+
   css: [
     '~/assets/scss/main.scss'
   ],
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -13,4 +15,5 @@ export default defineNuxtConfig({
     }
   },
 
+  modules: ['nuxt-swiper'],
 })

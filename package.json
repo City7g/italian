@@ -13,5 +13,8 @@
     "@types/node": "^18.16.19",
     "nuxt": "^3.6.5",
     "sass": "^1.64.0"
+  },
+  "dependencies": {
+    "nuxt-swiper": "^1.2.0"
   }
 }
