@@ -1,8 +1,8 @@
 <template>
-   <!-- <IndexFirst />
+  <IndexFirst />
   <IndexSecond /> 
   <IndexGrammar />
-  <IndexWhatNext />  -->
+  <IndexWhatNext /> 
   <IndexBlog />
 </template>
 

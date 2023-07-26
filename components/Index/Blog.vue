@@ -15,14 +15,17 @@
           <CardBlog
             title="Text"
             img="/img/blog-category-1.svg"
+            img_2="/img/block-next.svg"
           />
           <CardBlog
             title="Text2"
-            img="/img/blog-category-1.svg"
+            img="/img/blog-category-2.svg"
+            img_2="/img/block-next.svg"
           />
           <CardBlog
             title="Text3"
-            img="/img/blog-category-1.svg"
+            img="/img/blog-category-3.svg"
+            img_2="/img/block-next.svg"
           />
         </div>
 
@@ -34,6 +37,15 @@
 <style lang="scss">
 .blog {
   padding: 90px 0;
+}
+
+.blog__title {
+  margin-left: 30px;
+  transition: 0.3s color ease;
+
+  &:hover {
+    color: $red;
+  }
 }
 
 .blog__category {
