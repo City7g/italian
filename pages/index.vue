@@ -5,5 +5,6 @@
   <IndexPresentation />
   <IndexWhatNext /> 
   <IndexBlog />
+  <IndexMedia />
 </template>
 

@@ -23,6 +23,7 @@
   position: relative;
   background-color: $bc-grey;
   padding: 140px 0px;
+  margin-top: 80px;
 }
 
 .what-next__wrap {
