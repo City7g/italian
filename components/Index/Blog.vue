@@ -13,17 +13,17 @@
           <!-- <CardBlog v-for="category in 3" :key="category" /> -->
 
           <CardBlog
-            title="Text"
+            title="Италия"
             img="/img/blog-category-1.svg"
             img_2="/img/block-next.svg"
           />
           <CardBlog
-            title="Text2"
+            title="Язык"
             img="/img/blog-category-2.svg"
             img_2="/img/block-next.svg"
           />
           <CardBlog
-            title="Text3"
+            title="Обучение"
             img="/img/blog-category-3.svg"
             img_2="/img/block-next.svg"
           />
@@ -48,7 +48,18 @@
   }
 }
 
+.grammar__title-icon {
+    & path {
+    transition: 0.3s stroke ease;
+  }
+}
+
+.blog__title:hover .grammar__title-icon path {
+  stroke: $red;
+}
+
 .blog__category {
+  margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
