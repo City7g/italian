@@ -16,10 +16,16 @@ defineProps({
 .card-video {
   position: relative;
   border-radius: 5px;
+  overflow: hidden;
+
+  &:hover .card-video__img {
+    transform: scale(1.15);
+  }
 }
 
 .card-video__img {
-  object-fit: fill;
+  display: block;
+  transition: 0.3s transform ease;
 }
 
 .card-play__img {
