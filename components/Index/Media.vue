@@ -9,14 +9,24 @@
         <div class="slider__nav"></div>
       </div>
       <div class="media__card">
-        <CardVideo />
-        <CardVideo />
-        <CardVideo />
+        <CardVideo 
+          img="/img/video-card1.png"
+        />
+        <CardVideo
+          img="/img/video-card2.png"
+        />
+        <CardVideo
+          img="/img/video-card2.png"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-
+.media__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 </style>
