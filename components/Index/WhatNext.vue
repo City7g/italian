@@ -7,12 +7,12 @@
           <p class="text-p1 what-next__text">Exercitation enim non Lorem nostrud nisi commodo aliqua dolor eu tempor veniam non nisi do. Cillum sunt aliquip eu proident excepteur aute nostrud eiusmod dolore non voluptate laborum. !
           </p>
           <button class="btn-main what-next__button">Начать</button>
-          <img class="what-next__ball" src="/img/what-next" alt="">
+          <!-- <img class="what-next__ball" src="/img/what-next.svg" alt=""> -->
         </div>
         <div class="what-next__image">
           <img class="what-next__img" src="/img/what-next.svg" alt="">
         </div>
-          <img class="what-next__cat-foot" src="/img/WhatNext__cat foot.svg" alt="">
+          <img class="what-next__cat-foot" src="/img/WhatNext__cat_foot.svg" alt="">
       </div>
     </div>
   </section>
