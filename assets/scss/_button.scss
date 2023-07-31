@@ -12,6 +12,11 @@
   &:hover {
     background-color: $red-hover;
   }
+
+  @media (max-width: 1199px) {
+    padding: 7px 25px;
+    font-size: 12px;
+  }
 }
 
 .btn-transparent {

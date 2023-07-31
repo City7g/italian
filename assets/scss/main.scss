@@ -8,13 +8,6 @@
 
 body {
   font-family: "Circe";
-
-  // deleted
-  &::after {
-    content: "";
-    display: block;
-    height: 200px;
-  }
 }
 
 ::selection {

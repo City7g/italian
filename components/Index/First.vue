@@ -27,13 +27,39 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
+
+  @media (max-width: 1199px) {
+    gap: 46px;
+    align-items: end;
+  }
+
+  @media (max-width: 567px) {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 }
 
 .first__title {
   margin-bottom: 20px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 26px;
+  }
+
+  @media (max-width: 567px) {
+    margin-bottom: 10px;
+  }
 }
 
 .first__text {
   margin-bottom: 60px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 567px) {
+    margin-bottom: 30px;
+  }
 }
 </style>

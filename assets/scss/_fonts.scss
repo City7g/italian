@@ -1,21 +1,37 @@
-@include font-face("Circe", "Circe-Bold", 700);
 @include font-face("Circe", "Circe-Regular", 400);
+@include font-face("Circe", "Circe-Bold", 700);
 
 .title-h1 {
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1.2px;
+
+  @media (max-width: 1199px) {
+    font-size: 30px;
+    letter-spacing: 0.9px;
+  }
 }
 
 .title-h2 {
   font-size: 30px;
   line-height: 1.1; 
   letter-spacing: 0.9px;
+
+  @media (max-width: 1199px) {
+    font-size: 20px;
+    line-height: 1.13;
+    letter-spacing: 0.6px;
+  }
 }
 
 .text-p1 {
   color: $grey;
   font-size: 16px;
   line-height: 1.7;
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.5;
+  }
 }
