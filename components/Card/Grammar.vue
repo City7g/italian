@@ -47,6 +47,23 @@ defineProps({
       opacity: 1;
     }
   }
+
+  @media (max-width: 1199px) {
+    padding: 30px;
+    gap: 45px;
+  }
+
+  @media (max-width: 567px) {
+    padding: 30px;
+    gap: 40px;
+    min-height: 238px;
+  }
+}
+
+.card-grammar img {
+  @media (max-width: 1199px) {
+    max-width: 55px;
+  }
 }
 
 .item__title {
@@ -55,6 +72,10 @@ defineProps({
 
 .card-grammar__text {
   margin-bottom: 35px;
+
+  @media (max-width: 567px) {
+    margin-bottom: 20px;
+  }
 }
 
 .card-grammar__link {
@@ -76,5 +97,11 @@ defineProps({
   top: 0;
   right: 0;
   opacity: 0;
+}
+
+.next__image {
+  @media (max-width: 1199px) {
+    width: 45px;
+  }
 }
 </style>

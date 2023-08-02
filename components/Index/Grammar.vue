@@ -41,6 +41,16 @@
 .grammar{
   margin-top: 150px;
   margin-bottom: 123px;
+
+  @media (max-width: 1199px) {
+    margin-top: 96px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 567px) {
+    margin-top: 66px;
+    margin-bottom: 50px;
+  }
 }
 
 .grammar__title {
@@ -49,6 +59,10 @@
 
   &:hover {
     color: $red;
+  }
+
+  @media (max-width: 1199px) {
+    margin-left: 0;
   }
 }
 
@@ -70,5 +84,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 22px;
   margin-top: 55px;
+
+  @media (max-width: 1199px) {
+    margin-top: 30px;
+    gap: 15px;
+  }
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 </style>

@@ -24,12 +24,23 @@
   background-color: $bc-grey;
   padding: 140px 0px;
   margin-top: 80px;
+
+  @media (max-width: 1199px) {
+    padding: 75px 0;
+    margin-top: 60px;
+  }
 }
 
 .what-next__wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   gap: 40px;
+
+  @media (max-width: 568px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 
 .what-next__content {
@@ -42,6 +53,10 @@
 
 .what-next__text {
   margin-bottom: 50px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 }
 
 .what-next__ball {
@@ -54,5 +69,9 @@
   position: absolute;
   top: 38%;
   left: 25%;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 </style>

@@ -65,6 +65,18 @@
   &:hover {
     background-color: $green;
   }
+
+  @media (max-width: 1199px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+
+  @media (max-width: 568px) {
+    
+  }
 }
 
 path {
@@ -80,6 +92,4 @@ path {
 .slider__next {
   margin-left: -1px;
 }
-
-
 </style>

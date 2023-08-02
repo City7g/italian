@@ -37,6 +37,10 @@
 <style lang="scss">
 .blog {
   padding: 90px 0;
+
+  @media (max-width: 680px) {
+    padding: 70px 0;
+  }
 }
 
 .blog__title {
@@ -45,6 +49,10 @@
 
   &:hover {
     color: $red;
+  }
+
+  @media (max-width: 1199px) {
+    margin-left: 0;
   }
 }
 
@@ -63,5 +71,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+
+  @media (max-width: 1199px) {
+    margin-top: 30px;
+    gap: 10px;
+  }
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

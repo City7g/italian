@@ -27,6 +27,10 @@
 <style lang="scss">
 .presentation {
   padding: 80px 0;
+
+  @media (max-width: 1199px) {
+    padding: 60px 0;
+  }
 }
 
 .presentation__title {
@@ -60,14 +64,15 @@
 }
 
 .presentation__wrap {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(100px, calc(50% - 20px)));
   gap: 20px 40px;
 
-  @media (min-width: 1200px) {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2, minmax(100px, calc(50% - 20px)));
+  @media (max-width: 680px) {
+  grid-template-columns: repeat(1, 1fr);
   }
 }
+//  Ламается Слайдер
+// 。゜゜(´Ｏ`) ゜゜ (ну почемуууу "presentation__wrap" не работал как надо)
 </style>

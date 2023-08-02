@@ -37,10 +37,18 @@
 
 .media__header {
   margin-bottom: 50px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 }
 
 .media__texts {
   margin-left: 20px;
+
+  @media (max-width: 1199px) {
+    margin-left: 0;
+  }
 }
 
 .media__title {
@@ -68,6 +76,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+  }
 }
 
 .media__pillow {

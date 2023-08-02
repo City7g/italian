@@ -24,16 +24,34 @@
 .second {
   background-color: $bc-grey;
   padding: 82px 0px;
+
+  @media (max-width: 567px) {
+    padding: 41px 0;
+  }
 }
 
 .second__wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+
+  @media (max-width: 567px) {
+    grid-template-columns: 1fr;
+  }
 }  
+
+.second__image {
+  @media (max-width: 567px) {
+    // grid-template-rows: minmax(auto, 100px); Как по умному сделать картнку меньше или адаптивной
+  }
+}
 
 .second__content {
   position: relative;
+
+    @media (max-width: 567px) {
+    grid-row: 1;
+  }
 }
 
 .second__title {
@@ -42,11 +60,23 @@
 
 .second__text {
   margin-bottom: 50px;
+
+  @media (max-width: 567px) {
+    margin-bottom: 40px;
+  }
 }
 
 .second__ball {
   position: absolute;
   right: -30px;
   bottom: -115px;
+
+  @media (max-width: 1199px) {
+    width: 108px;
+  }
+
+  @media (max-width: 567px) {
+    width: 84px;
+  }
 }
 </style>

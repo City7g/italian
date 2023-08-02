@@ -9,7 +9,7 @@ defineProps({
 <template>
   <div class="card-blog">
     <img class="card-blog__img" :src="img" alt="">
-    <h4 class="title-h2 card-blog__title">#{{ title }}</h4>
+    <h3 class="title-h2 card-blog__title">#{{ title }}</h3>
     <div class="block__next">
       <img class="next__image" :src="img_2" alt="">
     </div>
@@ -32,11 +32,24 @@ defineProps({
       opacity: 1;
     }
   }
+
+  @media (max-width: 1199px) {
+    padding: 40px 20px 20px;
+  }
 }
 
 .card-blog__img {
   margin-bottom: 75px;
   height: 220px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 45px;
+  }
+}
+
+.card-blog__title {
+  max-width: 250px;
+  margin: 0 auto;
 }
 
 .block__next {

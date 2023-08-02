@@ -21,6 +21,10 @@
 .first {
   background-color: #fff;
   padding: 90px 0;
+
+  @media (max-width: 567px) {
+    padding: 45px 0;
+  }
 }
 
 .first__wrap {
