@@ -35,6 +35,11 @@
 .footer__wrap {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 567px) {
+    display: grid;
+    grid-column: 1 / 1;
+  }
 }
 
 .footer__left {
@@ -50,6 +55,18 @@
   &>* {
     flex: 0 0 calc(33% - 40px);
     margin-bottom: 15px;
+  }
+
+  @media (max-width: 1199px) {
+    gap: 0 30px;
+      &>* {
+        flex: 0 0 calc(50% - 40px);
+        margin-bottom: 15px;
+      }
+  }
+
+  @media (max-width: 567px) {
+    order: 1;
   }
 }
 
@@ -69,6 +86,9 @@
   display: flex;
   justify-content: flex-end;
   gap: 120px;
+
+  @media (max-width: 567px) {
+  }
 }
 
 .footer__botton span {

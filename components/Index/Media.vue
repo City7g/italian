@@ -33,6 +33,10 @@
 .media {
   margin: 80px 0px;
   position: relative;
+
+  @media (max-width: 567px) {
+    margin: 60px 0px;
+  }
 }
 
 .media__header {
@@ -79,7 +83,10 @@
 
   @media (max-width: 1199px) {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: dense;
+  }
+
+  @media (max-width: 567px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

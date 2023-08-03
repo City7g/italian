@@ -41,6 +41,13 @@
   }
 }
 
+.presentation__image {
+  @media (max-width: 680px) {
+    order: 1;
+    text-align: center;
+  }
+}
+
 // .presentation__title-icon {
 //   & path {
 //     transition: 0.3s stroke ease;
@@ -70,7 +77,8 @@
   gap: 20px 40px;
 
   @media (max-width: 680px) {
-  grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: minmax(100px, 100%);
+    gap: 40px;
   }
 }
 //  Ламается Слайдер

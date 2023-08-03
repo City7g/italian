@@ -17,9 +17,22 @@ defineProps({
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  max-width: 373px;
 
   &:hover .card-video__img {
     transform: scale(1.15);
+  }
+
+  @media (max-width: 1199px) {
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 567px) {
+    &:nth-child(2) {
+      display: none;
+    }
   }
 }
 

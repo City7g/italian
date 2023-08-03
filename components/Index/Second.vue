@@ -77,6 +77,8 @@
 
   @media (max-width: 567px) {
     width: 84px;
+    top: 180px;
+    right: -13px;
   }
 }
 </style>
