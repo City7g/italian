@@ -1,0 +1,6 @@
+.link {
+  transition: 0.3s color ease;
+  &:hover {
+    color: $green;
+  }
+}

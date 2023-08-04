@@ -80,6 +80,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  justify-content: center;
 
   @media (max-width: 1199px) {
     grid-template-columns: repeat(2, 1fr);
@@ -92,7 +93,19 @@
 
 .media__pillow {
   position: absolute;
-  top: -140px;
-  right: 387px;
+  top: -48%;
+  right: 10%;
+
+  @media (max-width: 1199px) {
+    right: 0;
+  }
+
+  @media (max-width: 765px) {
+    max-width: 180px;
+  }
+
+  @media (max-width: 565px) {
+    max-width: 125px;
+  }
 }
 </style>

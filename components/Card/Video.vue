@@ -17,7 +17,6 @@ defineProps({
   position: relative;
   border-radius: 5px;
   overflow: hidden;
-  max-width: 373px;
 
   &:hover .card-video__img {
     transform: scale(1.15);
@@ -39,15 +38,14 @@ defineProps({
 .card-video__img {
   display: block;
   transition: 0.3s transform ease;
+  width: 100%;
 }
 
 .card-play__img {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 

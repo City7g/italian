@@ -7,16 +7,16 @@
         </NuxtLink> 
 
         <nav class="header__nav">
-          <NuxtLink to="/" class="header__link">Обучение</NuxtLink>
-          <NuxtLink to="/" class="header__link">Материалы</NuxtLink>
-          <NuxtLink to="/" class="header__link">Грамматика </NuxtLink>
-          <NuxtLink to="/" class="header__link">Медиатека</NuxtLink>
-          <NuxtLink to="/" class="header__link">Презентации</NuxtLink>
-          <NuxtLink to="/" class="header__link">Блог</NuxtLink>
-          <NuxtLink to="/" class="header__link">О нас</NuxtLink>
-        </nav>
+          <NuxtLink to="/" class="link header__link">Обучение</NuxtLink>
+          <NuxtLink to="/" class="link header__link">Материалы</NuxtLink>
+          <NuxtLink to="/" class="link header__link">Грамматика </NuxtLink>
+          <NuxtLink to="/" class="link header__link">Медиатека</NuxtLink>
+          <NuxtLink to="/" class="link header__link">Презентации</NuxtLink>
+          <NuxtLink to="/" class="link header__link">Блог</NuxtLink>
+          <NuxtLink to="/" class="link header__link">О нас</NuxtLink>
+        </nav> 
 
-        <div class="social__media"></div>
+        <Socials />
 
         <div class="header__btns">
           <button class="btn-transparent header__btn">Войти</button>
@@ -28,6 +28,13 @@
 </template>
 
 <style lang="scss">
+.header {
+  position: sticky;
+  top: 0;
+  background-color: $white;
+  z-index: 50;
+}
+
 .header__wrap {
   display: flex;
   align-items: center;

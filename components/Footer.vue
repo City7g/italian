@@ -5,16 +5,18 @@
         <div class="footer__left">
           <NuxtLink to="/" class="footer__logo">
             <img src="/icon/logo.png" alt="">
-          </NuxtLink> 
+          </NuxtLink>
+          
+          <Socials />
         </div>
         <nav class="footer__nav">
-          <NuxtLink to="/" class="footer__link">Обучение</NuxtLink>
-          <NuxtLink to="/" class="footer__link">О школе</NuxtLink>
-          <NuxtLink to="/" class="footer__link">Личный кабинет</NuxtLink>
-          <NuxtLink to="/" class="footer__link">Блог</NuxtLink>
-          <NuxtLink to="/" class="footer__link">Подход к обучению</NuxtLink>
-          <NuxtLink to="/" class="footer__link">Вход / Регистрация</NuxtLink>
-          <NuxtLink to="/" class="footer__link">Материалы</NuxtLink>
+          <NuxtLink to="/" class="link footer__link">Обучение</NuxtLink>
+          <NuxtLink to="/" class="link footer__link">О школе</NuxtLink>
+          <NuxtLink to="/" class="link footer__link">Личный кабинет</NuxtLink>
+          <NuxtLink to="/" class="link footer__link">Блог</NuxtLink>
+          <NuxtLink to="/" class="link footer__link">Подход к обучению</NuxtLink>
+          <NuxtLink to="/" class="link footer__link">Вход / Регистрация</NuxtLink>
+          <NuxtLink to="/" class="link footer__link">Материалы</NuxtLink>
         </nav>
         <button class="btn-main footer__btn">Написать нам</button>
       </div>
@@ -30,20 +32,32 @@
 .footer {
   background-color: $bc-grey;
   padding: 32px 0 60px;
+
+  @media (max-width: 567px) {
+    padding: 32px 0 30px;
+  }
 }
 
 .footer__wrap {
   display: flex;
   justify-content: space-between;
+  gap: 25px;
+  align-items: flex-start;
 
   @media (max-width: 567px) {
     display: grid;
-    grid-column: 1 / 1;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 0px;
   }
 }
 
 .footer__left {
+  flex-shrink: 0;
+}
 
+.footer__logo {
+  display: block;
+  margin-bottom: 25px;
 }
 
 .footer__nav {
@@ -67,6 +81,7 @@
 
   @media (max-width: 567px) {
     order: 1;
+    grid-column: 1 / -1;
   }
 }
 
@@ -78,7 +93,12 @@
 }
 
 .footer__btn {
-  height: 100%;
+
+  @media (max-width: 567px) {
+    display: block;
+    justify-self: flex-start;
+    align-self: center;
+  }
 }
 
 .footer__botton {
@@ -88,6 +108,11 @@
   gap: 120px;
 
   @media (max-width: 567px) {
+    gap: 60px;
+  }
+
+  @media (max-width: 410px) {
+    gap: 30px;
   }
 }
 
