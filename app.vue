@@ -1,6 +1,10 @@
+<script setup>
+import gsap from 'gsap'
+</script>
+
 <template>
   <div>
-    <!-- <Header />  -->
+    <Header /> 
     <NuxtPage />
     <!-- <Footer /> -->
   </div>

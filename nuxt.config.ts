@@ -15,5 +15,5 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['nuxt-swiper'],
+  modules: ['nuxt-swiper', 'nuxt-vitest'],
 })

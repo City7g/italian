@@ -14,6 +14,7 @@
           <NuxtLink to="/" class="header__link">Презентации</NuxtLink>
           <NuxtLink to="/" class="header__link">Блог</NuxtLink>
           <NuxtLink to="/" class="header__link">О нас</NuxtLink>
+          <NuxtLink to="/test" class="header__link">Тест</NuxtLink>
         </nav>
 
         <div class="social__media"></div>
