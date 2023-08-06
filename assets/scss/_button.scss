@@ -7,10 +7,14 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 132.9%;
-  transition: 0.3s background-color ease;
+  transition: 0.3s all ease;
 
   &:hover {
     background-color: $red-hover;
+  }
+
+  &:disabled {
+    opacity: .3;
   }
 
   @media (max-width: 1199px) {

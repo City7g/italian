@@ -1,6 +1,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
+  runtimeConfig: {
+    public: {
+      strapiApi: 'https://strapi-italian.onrender.com'
+    }
+  },
+
   css: [
     '~/assets/scss/main.scss'
   ],

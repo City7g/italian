@@ -9,11 +9,11 @@
         <nav class="header__nav">
           <NuxtLink to="/" class="header__link">Обучение</NuxtLink>
           <NuxtLink to="/" class="header__link">Материалы</NuxtLink>
-          <NuxtLink to="/" class="header__link">Грамматика </NuxtLink>
+          <!-- <NuxtLink to="/" class="header__link">Грамматика </NuxtLink>
           <NuxtLink to="/" class="header__link">Медиатека</NuxtLink>
           <NuxtLink to="/" class="header__link">Презентации</NuxtLink>
           <NuxtLink to="/" class="header__link">Блог</NuxtLink>
-          <NuxtLink to="/" class="header__link">О нас</NuxtLink>
+          <NuxtLink to="/" class="header__link">О нас</NuxtLink> -->
           <NuxtLink to="/test" class="header__link">Тест</NuxtLink>
         </nav>
 
@@ -21,7 +21,7 @@
 
         <div class="header__btns">
           <button class="btn-transparent header__btn">Войти</button>
-          <button class="btn-secondary header__btn">Регистрация</button>
+          <!-- <button class="btn-secondary header__btn">Регистрация</button> -->
         </div>
       </div>
     </div>
