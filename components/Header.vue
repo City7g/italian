@@ -1,5 +1,23 @@
+<script setup>
+// $('.header__burger').click(function (event) {
+//   $('.header__burger, .header__nav').toggleClass('active');
+//   $('body').toggleClass('lock');
+// })
+
+const isMenuOpen = ref(false)
+
+// onMounted(() => {
+//   document.querySelector('.header__burger')?.addEventListener('click', () => {
+//     document.querySelectorAll('.header__burger, .header__nav').forEach(item => {
+//       item.classList.toggle('active')
+//     })
+//     document.body.classList.toggle('lock')
+//   })
+// })
+</script>
+
 <template>
-  <header class="header" >
+  <header class="header">
     <div class="container">
       <div class="header__wrap">
         <NuxtLink to="/" class="header__logo">
@@ -16,6 +34,8 @@
           <NuxtLink to="/" class="link header__link">О нас</NuxtLink>
         </nav> 
 
+        <div @click="isMenuOpen = !isMenuOpen">{{ isMenuOpen }}</div>
+
         <Socials />
 
         <div class="header__btns">
@@ -23,7 +43,7 @@
           <button class="btn-secondary header__btn">Регистрация</button>
         </div>
 
-        <div class="header__burger">
+        <div class="header__burger" :class="{ active: isMenuOpen }">
           <span></span>
         </div>
       </div>
@@ -89,6 +109,9 @@
     position: relative;
     z-index: 3;
     }
+  .header__burger.active {
+    background-color: red;
+    }
   .header__burger span {
     position: absolute;
     background-color: $grey;
@@ -116,12 +139,3 @@
     }
 }
 </style>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js">
-  $(document).ready(function () {
-    $('.header__burger').click(function (event) {
-      $('.header__burger, .header__nav').toggleClass('active');
-      $('body').toggleClass('lock');
-    });
-  });
-</script>
