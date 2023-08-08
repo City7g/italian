@@ -15,6 +15,7 @@
     "sass": "^1.64.0"
   },
   "dependencies": {
+    "jquery": "^3.7.0",
     "nuxt-swiper": "^1.2.0"
   }
 }
