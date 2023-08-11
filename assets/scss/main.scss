@@ -9,9 +9,15 @@
 @import "./button";
 @import "./link";
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: "Circe";
 }
+
+
 
 ::selection {
   background-color: $black;

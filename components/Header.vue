@@ -1,19 +1,15 @@
 <script setup>
-// $('.header__burger').click(function (event) {
-//   $('.header__burger, .header__nav').toggleClass('active');
-//   $('body').toggleClass('lock');
-// })
-
 const isMenuOpen = ref(false)
 
-// onMounted(() => {
-//   document.querySelector('.header__burger')?.addEventListener('click', () => {
-//     document.querySelectorAll('.header__burger, .header__nav').forEach(item => {
-//       item.classList.toggle('active')
-//     })
-//     document.body.classList.toggle('lock')
-//   })
-// })
+watch(isMenuOpen, (newX) => {
+  if (newX) {
+    document.body.style.overflow = "hidden"
+    document.querySelector(".bg").classList.add("active")
+  } else {
+    document.body.style.overflow = ""
+    document.querySelector(".bg").classList.remove("active")
+  }
+})
 </script>
 
 <template>
@@ -24,17 +20,15 @@ const isMenuOpen = ref(false)
           <img src="/icon/logo.png" alt="">
         </NuxtLink> 
 
-        <nav class="header__nav">
-          <NuxtLink to="/" class="link header__link">Обучение</NuxtLink>
-          <NuxtLink to="/" class="link header__link">Материалы</NuxtLink>
-          <NuxtLink to="/" class="link header__link">Грамматика </NuxtLink>
-          <NuxtLink to="/" class="link header__link">Медиатека</NuxtLink>
-          <NuxtLink to="/" class="link header__link">Презентации</NuxtLink>
-          <NuxtLink to="/" class="link header__link">Блог</NuxtLink>
-          <NuxtLink to="/" class="link header__link">О нас</NuxtLink>
+        <nav class="header__nav" :class="{ 'active': isMenuOpen }">
+          <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Обучение</NuxtLink>
+          <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Материалы</NuxtLink>
+          <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Грамматика </NuxtLink>
+          <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Медиатека</NuxtLink>
+          <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Презентации</NuxtLink>
+          <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Блог</NuxtLink>
+          <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">О нас</NuxtLink>
         </nav> 
-
-        <div @click="isMenuOpen = !isMenuOpen">{{ isMenuOpen }}</div>
 
         <Socials />
 
@@ -43,12 +37,27 @@ const isMenuOpen = ref(false)
           <button class="btn-secondary header__btn">Регистрация</button>
         </div>
 
-        <div class="header__burger" :class="{ active: isMenuOpen }">
+        <div class="header__burger" :class="{ 'active': isMenuOpen }" @click="isMenuOpen = !isMenuOpen">
           <span></span>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- <div class="mobile-menu" :class="{ 'active': isMenuOpen }">
+    <button class="btn-transparent mobile-menu__btn">Войти</button>
+    <nav class="mobile-menu__nav" :class="{ 'active': isMenuOpen }">
+      <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Обучение</NuxtLink>
+      <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Материалы</NuxtLink>
+      <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Грамматика </NuxtLink>
+      <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Медиатека</NuxtLink>
+      <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Презентации</NuxtLink>
+      <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">Блог</NuxtLink>
+      <NuxtLink to="/" class="link header__link" :class="{ 'active': isMenuOpen }">О нас</NuxtLink>
+    </nav>
+    <Socials />
+  </div> -->
+
 </template>
 
 <style lang="scss">
@@ -88,6 +97,10 @@ const isMenuOpen = ref(false)
   }
 }
 
+.header__link.active {
+  font-size: 20px;
+}
+
 .header__btn:not(:last-child) {
   margin-right: 8px;
 }
@@ -98,7 +111,25 @@ const isMenuOpen = ref(false)
   }
 
   .header__nav {
-    display: none;
+    position: fixed;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__nav.active {
+    top: 0;
+    right: 0;
+    background-color: $white;
+    display: flex;
+    max-width: 375px;
+    // flex: 0 1 375px; Почему не работает ?
+    flex-direction: column;
+    gap: 30px;
+    padding: 75px 0px 0px 60px;
   }
 
   .header__burger {
@@ -108,9 +139,6 @@ const isMenuOpen = ref(false)
     height: 20px;
     position: relative;
     z-index: 3;
-    }
-  .header__burger.active {
-    background-color: red;
     }
   .header__burger span {
     position: absolute;
@@ -137,5 +165,35 @@ const isMenuOpen = ref(false)
     .header__burger:after {
       bottom: 0;
     }
+
+    .header__burger.active span {
+    transform: scale(0);
+    }
+
+    .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+    }
+    .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    }
 }
+
+
+@media (max-width: 585px) {
+  .header__nav.active {
+    gap: 20px;
+    padding: 55px 0px 0px 40px;
+  }
+
+  .header__link.active {
+  font-size: 16px;
+  }
+
+  .btn-transparent {
+    display: none;
+  }
+}
+
 </style>

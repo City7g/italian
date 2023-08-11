@@ -1,3 +1,7 @@
+<script setup>
+const isHideBtn = ref(false)
+</script>
+
 <template>
   <section class="first">
     <div class="container">
@@ -6,7 +10,9 @@
           <h1 class="title-h1 first__title">Начни учить итальянский прямо сейчас!</h1>
           <p class="text-p1 first__text">Studia.it предлагает новый подход к изучению итальянского языка!Мы раскладываем язык по
             полочкам, проникаем в самую его суть и вытаскиваем из недр самое нужное.</p>
-          <button class="btn-main first__button">Начать обучение</button>
+          <button class="btn-main first__button" :class="{ 'active' : isHideBtn }" @click="isHideBtn = !isHideBtn"> 
+            Начать обучение 
+          </button>
         </div>
 
         <div class="first__image">
@@ -65,5 +71,9 @@
   @media (max-width: 567px) {
     margin-bottom: 30px;
   }
+}
+
+.btn-main.active  {
+  opacity: 0.4;
 }
 </style>

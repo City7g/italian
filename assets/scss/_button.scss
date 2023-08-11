@@ -38,6 +38,11 @@
     color: $green;
     border-color: $green ;
   }
+
+  @media (max-width: 1190px) {
+    font-size: 12;
+    padding: 7px 14px;
+  }
 }
 
 .btn-secondary {
@@ -54,5 +59,10 @@
 
   &:hover {
     background-color: $green-hover;
+  }
+
+  @media (max-width: 1190px) {
+    font-size: 12;
+    padding: 7px 14px;
   }
 }
