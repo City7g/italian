@@ -1,0 +1,40 @@
+input {
+  padding: 13px 26px;
+  border-radius: 2px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  background-position: 22px center;
+  background-repeat: no-repeat;
+  background-size: auto 40%;
+  transition: .3s ease;
+  transition-property: border-color, box-shadow;
+  
+  &:focus {
+    border-color: #39B100;
+    box-shadow: 0 0 0 4px rgba(#39B100, .5);
+  }
+  
+  &.input--user {
+    padding-left: 50px;
+    background-image: url('/icon/user-input.svg');
+  }
+  
+  &.input--mail {
+    padding-left: 50px;
+    background-image: url('/icon/mail-input.svg');
+    background-size: auto 30%;
+  }
+  
+  &.input--lock {
+    padding-left: 50px;
+    background-image: url('/icon/lock-input.svg');
+  }
+  
+  &.input--error {
+    border-color: #EF4036;
+
+    &:focus {
+      box-shadow: 0 0 0 4px rgba(#EF4036, .5);
+    }
+  }
+}

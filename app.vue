@@ -4,6 +4,7 @@
     <NuxtPage />
     <Footer />
     <div class="bg"></div>
+    <!-- <PopupLogin /> -->
   </div>
 </template>
  

@@ -17,7 +17,8 @@ watch(isMenuOpen, (newX) => {
     <div class="container">
       <div class="header__wrap">
         <NuxtLink to="/" class="header__logo">
-          <img src="/icon/logo.png" alt="">
+          <!-- <img src="/icon/logo.png" alt=""> -->
+          <Logo />
         </NuxtLink> 
 
         <nav class="header__nav" :class="{ 'active': isMenuOpen }">
