@@ -1,6 +1,8 @@
 <script setup>
 const isMenuOpen = ref(false)
 
+const { openPopup } = inject('popup')
+
 watch(isMenuOpen, (newX) => {
   if (newX) {
     document.body.style.overflow = "hidden"
@@ -34,8 +36,8 @@ watch(isMenuOpen, (newX) => {
         <Socials />
 
         <div class="header__btns">
-          <button class="btn-transparent header__btn">Войти</button>
-          <button class="btn-secondary header__btn">Регистрация</button>
+          <button @click="openPopup('login')" class="btn-transparent header__btn">Войти</button>
+          <button @click="openPopup('register')" class="btn-secondary header__btn">Регистрация</button>
         </div>
 
         <div class="header__burger" :class="{ 'active': isMenuOpen }" @click="isMenuOpen = !isMenuOpen">

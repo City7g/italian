@@ -1,13 +1,18 @@
+<script setup>
+const { isPopipShow, openPopup, closePopup } = usePopup()
+
+provide('popup', { openPopup, closePopup })
+</script>
+
 <template>
   <div>
     <Header />
     <NuxtPage />
     <Footer />
     <div class="bg"></div>
-    <!-- <PopupLogin /> -->
+    <PopupLogin v-if="isPopipShow === 'login'" />
   </div>
 </template>
- 
 
 <style lang="scss">
 .bg {

@@ -9,14 +9,13 @@
 @import "./link";
 
 html {
-  scrollbar-gutter: stable;
+  // scrollbar-gutter: stable;
 }
 
 body {
   font-family: "Circe";
+  // overflow-y: hidden;
 }
-
-
 
 ::selection {
   background-color: $black;

@@ -4,7 +4,8 @@
       <div class="footer__wrap">
         <div class="footer__left">
           <NuxtLink to="/" class="footer__logo">
-            <img src="/icon/logo.png" alt="">
+            <!-- <img src="/icon/logo.png" alt=""> -->
+            <Logo />
           </NuxtLink>
           
           <Socials />
